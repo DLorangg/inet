@@ -1,0 +1,153 @@
+/* Variables */
+:root{
+    --inet: #0E68AF;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+/* Fuente */
+@font-face{
+    font-family: Inter;
+    src: url(font/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+/* Estilos generales */
+*{
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    color: var(--negro);
+}
+
+#parent{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 5px;
+    background-color: var(--blanco);
+    margin-bottom: 200px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--inet);
+    border-radius: 5px;
+    border-right: 1px solid var(--inet)
+}
+
+/* Header */
+#head{
+    width: 100%;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#inet{
+    width: 790px;
+    height: 80%;
+    margin-left: 30px;
+}
+
+#iden{
+    width: 153px;
+    height: 153px;
+    float: right;
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+hr {
+    width: 99%;
+    height: 3px;
+    background-color: var(--inet);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Estilos menú */
+#main h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: var(--inet);
+    font-family: Inter;
+    font-size: 40px;
+    grid-column: span 3;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.rectangle {
+    width: 260px;
+    height: 305px;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rectangle {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.label {
+    height: 34px;
+    width: 260px;
+    font-size: 14px;
+    color: #666;
+    background-color: var(--inet);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.label p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos responsive para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    #parent{
+        overflow-x: hidden;
+    }
+    #main {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -156,8 +156,7 @@ a {
     #iden {
         width: 100px;
         height: 100px;
-        margin: 10px 0;
-        float: none;
+        margin:  0;
     }
 
     hr {
@@ -197,14 +196,12 @@ a {
     }
 }
 
+/* Estilos responsive para dispositivos con ancho mínimo de 600px y máximo de 800px */
 @media screen and (min-width: 600px) and (max-width: 800px) {
-    #main{
+    #main {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    #head {
-        flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
     #inet {
@@ -216,7 +213,30 @@ a {
     #iden {
         width: 100px;
         height: 100px;
-        margin: 10px 0;
-        float: none;
     }
-}   
+
+    .label {
+        width: 100%;
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    #head {
+        flex-direction: row; /* Mantener el diseño en fila para mostrar ambos logotipos */
+        justify-content: space-between;
+    }
+
+    #inet {
+        width: 75%; /* Ancho del logo inet en esta resolución */
+        height: auto;
+    }
+
+    #iden {
+        width: 125px; /* Ancho del logo identificador en esta resolución */
+        height: 125px;
+    }
+
+}

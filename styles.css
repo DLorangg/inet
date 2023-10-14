@@ -13,6 +13,10 @@
 }
 
 /* Estilos generales */
+html{
+    height: 100%;
+}
+
 *{
     font-family: Inter;
     margin: 0;
@@ -31,6 +35,7 @@
     margin-bottom: 200px;
 }
 
+/* Scroll personalizado */
 body::-webkit-scrollbar {
     width: 8px;
 }

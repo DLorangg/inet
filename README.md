@@ -35,9 +35,7 @@ Los colores a utilizar son los siguientes:
 
 ### Icono de Identificación
 
-La aplicación contará con un icono que deberá estar disponible en dos opciones:
-1. Dibujo de líneas blancas con fondo azul de INET.
-2. Dibujo de líneas azul INET con fondo blanco.
+La aplicación cuenta con un icono identificador que representa todas las areas a las que se pueden llegar desde esta web.
 
 ## Características del Desarrollo
 
